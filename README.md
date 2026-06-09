@@ -1,42 +1,49 @@
-# 🏭 Franchise Factory — A-TownChain OS
-![Version](https://img.shields.io/badge/version-2.1.0-a259ff?style=for-the-badge)
-![ATCLang](https://img.shields.io/badge/ATCLang-v0.2.0-00ffcc?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-active-00d1ff?style=for-the-badge)
+# franchise-factory
 
-**Autonomous Franchise Factory** — Das dezentrale Business-Ökosystem auf A-TownChain
+> **Franchise Factory — DAO, Vault, Revenue-Share, Governance (ATC-9900)**
 
-## Was ist Franchise Factory?
-Die Franchise Factory ermöglicht es, dezentrale Geschäftsmodelle (Franchises) als Smart Contracts
-auf der A-TownChain zu registrieren, zu betreiben und zu governs.
+[![Layer](https://img.shields.io/badge/Layer-L10%2FL8%20(dApps%2FGov)-purple)](https://github.com/ShivaCoreDev/kai-os-wiki)
+[![KAI-OS](https://img.shields.io/badge/KAI--OS-v2.0.0-blue)](https://github.com/ShivaCoreDev/kai-os-wiki)
+[![Ökosystem](https://img.shields.io/badge/Ökosystem-A--TownChain-green)](https://github.com/A-TownChain-Okosystems/a-townchain-os/blob/feature/kai-os-integration/ECOSYSTEM.md)
+[![Wiki](https://img.shields.io/badge/Wiki-📖-blue)](https://github.com/A-TownChain-Okosystems/franchise-factory-wiki)
 
-## Kernkomponenten
-- `FranchiseRegistry` — Registrierung von Franchise-Lizenzen als NFT (ATC-9000)
-- `RevenueShare` — Automatische Gewinnverteilung per Smart Contract (ATC-8300)
-- `FranchiseDAO` — Governance für Franchise-Netzwerke (ATC-9900)
-- `FranchiseToken` — Proprietärer Franchise-Token (ATC-8300)
-- `Deployment Engine` — Ein-Klick-Deployment neuer Franchise-Instanzen
+---
 
-## Standards
-- ATC-8300: Fungible Token (Revenue Sharing)
-- ATC-9000: NFT (Franchise Lizenzen)
-- ATC-9900: DAO Governance
-- ATCLang v0.2.0: Alle Contracts proprietär in ATCLang
+## 📦 Teil des A-TownChain Ökosystems
 
-## Repository-Struktur
-```
-franchise-factory/
-├── contracts/         ATCLang Smart Contracts (.atc)
-│   ├── registry.atc   Franchise Registry
-│   ├── revenue.atc    Revenue Share Contract
-│   ├── dao.atc        Franchise DAO
-│   └── token.atc      Franchise Token
-├── deploy/            Deployment Scripts
-├── api/               REST API (Port 4000)
-├── docs/              Technische Dokumentation
-└── tests/             Test Suite
-```
+Dieses Repository ist **L10/L8 (dApps/Gov)** im A-TownChain Ökosystem.
 
-## Links
-- [A-TownChain Haupt-Repo](https://github.com/A-TownChain-Okosystems/a-townchain-os)
-- [Wiki](https://github.com/A-TownChain-Okosystems/franchise-factory-wiki)
-- [Standards](https://github.com/A-TownChain-Okosystems/atc-standards)
+**Haupt-Repo:** [franchise-factory Ökosystem-Core](https://github.com/A-TownChain-Okosystems/a-townchain-os)
+**Dokumentation:** [KAI-OS Wiki (31 Kapitel)](https://github.com/ShivaCoreDev/kai-os-wiki)  |  [Repo-Wiki](https://github.com/A-TownChain-Okosystems/franchise-factory-wiki)
+**Alle Repos:** [→ ECOSYSTEM.md](https://github.com/A-TownChain-Okosystems/a-townchain-os/blob/feature/kai-os-integration/ECOSYSTEM.md)
+
+---
+
+## 🔗 Abhängigkeiten
+
+**Dieses Repo nutzt:** [atc-contracts](https://github.com/A-TownChain-Okosystems/atc-contracts) · [atc-gateway](https://github.com/A-TownChain-Okosystems/atc-gateway)
+
+**Wird genutzt von:**
+
+
+---
+
+## 🗺️ Alle Repos im Überblick
+
+| Repo | Layer | Beschreibung |
+|------|-------|-------------|
+| [a-townchain-os](https://github.com/A-TownChain-Okosystems/a-townchain-os) | `L2-L4` | Haupt-Repo — KAI-OS Core, AI-Blockchain, Orchestrator |
+| [shivaos-kernel](https://github.com/A-TownChain-Okosystems/shivaos-kernel) | `L2` | ShivaOS Microkernel — Prozess-Manager, IPC, ATCFS, Cons |
+| [atcnet](https://github.com/A-TownChain-Okosystems/atcnet) | `L5` | P2P Netzwerk-Stack — Kademlia DHT, Bootstrap, Gossip |
+| [atc-gateway](https://github.com/A-TownChain-Okosystems/atc-gateway) | `L7` | API Gateway Port 4000 — Routing, Auth, Rate-Limit, Circ |
+| [atclang](https://github.com/A-TownChain-Okosystems/atclang) | `L2-L4` | ATCLang v0.3.0 — Proprietäre Programmiersprache (Lexer, |
+| [atc-contracts](https://github.com/A-TownChain-Okosystems/atc-contracts) | `L4/L11` | Smart Contracts — ATC-8300 Token, ATC-9000 NFT, ATC-990 |
+| [shivamon](https://github.com/A-TownChain-Okosystems/shivamon) | `L12` | Shivamon NFT Gaming — Battle Engine, Breeding, Marketpl |
+| [franchise-factory](https://github.com/A-TownChain-Okosystems/franchise-factory) | `L10/L8` | Franchise Factory — DAO, Vault, Revenue-Share, Governan |
+| [atc-ui](https://github.com/A-TownChain-Okosystems/atc-ui) | `L10` | Neon Dashboard — Wallet, Explorer, Shivamon, Gemini AI, |
+| [atc-standards](https://github.com/A-TownChain-Okosystems/atc-standards) | `L0` | ATC-0001–0009 & ATS-1000–1007 Protokoll-Standards |
+| [atownchain-whitepaper](https://github.com/A-TownChain-Okosystems/atownchain-whitepaper) | `L0` | Offizielles Whitepaper v2.1.0 |
+
+---
+
+*Teil des [A-TownChain Ökosystems](https://github.com/A-TownChain-Okosystems) · v2.0.0 · Stand: 2026-06-09*
