@@ -1,33 +1,35 @@
 # ARCHITECTURE.md — atc-franchise
-> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
+
+> Copyright © Michael Wroblewski / ShivaCore / A-TownChain-Okosystems. All Rights Reserved.
 
 ## File Tree
 ```tree
 atc-franchise/
-├── README.md                 # Franchise factory overview
-├── factory.py                # Main franchise factory Python orchestration module
-├── factory.atc               # Franchise factory smart contract logic
-├── contracts/                # Franchise registries and revenue smart contracts
-│   ├── registry.atc          # Franchise registry contract
-│   └── revenue.atc           # Franchise revenue split contract
-├── docs/                     # Franchise architectural specifications & security notes
-└── gff_core_ad20.atc         # Global Franchise Factory core contract
+├── package.json — Node.js workspace configuration
+├── tsconfig.json — TypeScript compiler configuration
+├── vite.config.ts — Vite build configuration
+├── README.md — Franchise Factory overview
+└── src/
+    ├── index.ts — Main entry point
+    ├── modules/ — Fr lifecycle modules
+    ├── factories/ — MetaFactory infrastructure
+    └── types/ — TypeScript type definitions
 ```
 
 ## Module Descriptions
-- README.md — Documentation for franchise engine and factory creation
-- factory.py — Python orchestration logic for instantiating new franchises
-- factory.atc — Core smart contract engine for franchise issuance
-- contracts/registry.atc — On-chain franchise registry and ownership contract
-- contracts/revenue.atc — Revenue distribution and royalty contract
-- docs/ — Architecture and security documentation for franchise operations
-- gff_core_ad20.atc — Core standard specification for Global Franchise Factory
+- `src/index.ts` — Main entry point for the Franchise Factory platform
+- `src/modules/` — 14 lifecycle modules (creation, deployment, monetization, etc.)
+- `src/factories/` — 12 infrastructure factories (MetaFactory v3.0)
+- `src/types/` — Shared TypeScript interfaces and types
 
 ## Build System
-- Python setuptools / npm
+- Node.js + TypeScript + Vite
+- npm workspace
 
 ## Dependencies
-- Python 3.10+, Node.js
+- atc-ui (component library)
+- atc-gateway (API Gateway)
+- atc-blockchain (blockchain core)
 
 ## Status (Active/Migrated/Legacy)
-Migrated to a-townchain-os / Legacy repo
+Active (TypeScript, Franchise Platform)
